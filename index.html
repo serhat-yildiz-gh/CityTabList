@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tablist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <section>
+        <!-- London , Paris, Tokyo şehileri için Tablist yapacağız. 3 başllıkta şehir isimleri olacak hangi şehir ismine tıklarsam o şher ile ilgili bilgi görüntülenecek, diğerleri display-none özelliği ile kaldırılacak-->
+        <div class="container">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            </div>
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of UK.</p>
+                <div class="time-display">Local Time: <span id="london-time"></span></div>
+                <img class="city-image" src="assets/londra.png" alt="London">
+            </div>
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital city of France.</p>
+                <div class="time-display">Local Time: <span id="paris-time"></span></div>
+                <img class="city-image" src="assets/paris.png" alt="Paris">
+            </div>
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital city of Japan.</p>
+                <div class="time-display">Local Time: <span id="tokyo-time"></span></div>
+                <img class="city-image" src="assets/tokyo.png" alt="Tokyo">
+            </div>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+
+</html>
